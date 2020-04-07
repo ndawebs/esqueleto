@@ -7,9 +7,9 @@ function esqueleto_setup() {
      * Make theme available for translation.
      * Translations can be filed in the /languages/ directory.
      */
-    /* Esqueleto 1.0 generated Load Text Domain Begin */
+    /* Pinegrow generated Load Text Domain Begin */
     load_theme_textdomain( 'esqueleto', get_template_directory() . '/languages' );
-    /* Esqueleto 1.0 generated Load Text Domain End */
+    /* Pinegrow generated Load Text Domain End */
 
     // Add default posts and comments RSS feed links to head.
     add_theme_support( 'automatic-feed-links' );
@@ -34,16 +34,16 @@ function esqueleto_setup() {
 /*
      * Register custom menu locations
      */
-    /* Esqueleto 1.0 generated Register Menus Begin */
+    /* Pinegrow generated Register Menus Begin */
 
-    /* Esqueleto 1.0 generated Register Menus End */
+    /* Pinegrow generated Register Menus End */
     
 /*
     * Set image sizes
      */
-    /* Esqueleto 1.0 generated Image sizes Begin */
+    /* Pinegrow generated Image sizes Begin */
 
-    /* Esqueleto 1.0 generated Image sizes End */
+    /* Pinegrow generated Image sizes End */
     
     /*
      * Switch default core markup for search form, comment form, and comments
@@ -82,16 +82,16 @@ function esqueleto_init() {
     /*
      * Register custom post types. You can also move this code to a plugin.
      */
-    /* Esqueleto 1.0 generated Custom Post Types Begin */
+    /* Pinegrow generated Custom Post Types Begin */
 
-    /* Esqueleto 1.0 generated Custom Post Types End */
+    /* Pinegrow generated Custom Post Types End */
     
     /*
      * Register custom taxonomies. You can also move this code to a plugin.
      */
-    /* Esqueleto 1.0 generated Taxonomies Begin */
+    /* Pinegrow generated Taxonomies Begin */
 
-    /* Esqueleto 1.0 generated Taxonomies End */
+    /* Pinegrow generated Taxonomies End */
 
 }
 endif; // esqueleto_setup
@@ -106,9 +106,9 @@ function esqueleto_custom_image_sizes_names( $sizes ) {
     /*
      * Add names of custom image sizes.
      */
-    /* Esqueleto 1.0 generated Image Sizes Names Begin*/
+    /* Pinegrow generated Image Sizes Names Begin*/
     /* This code will be replaced by returning names of custom image sizes. */
-    /* Esqueleto 1.0 generated Image Sizes Names End */
+    /* Pinegrow generated Image Sizes Names End */
     return $sizes;
 }
 add_action( 'image_size_names_choose', 'esqueleto_custom_image_sizes_names' );
@@ -123,9 +123,9 @@ function esqueleto_widgets_init() {
     /*
      * Register widget areas.
      */
-    /* Esqueleto 1.0 generated Register Sidebars Begin */
+    /* Pinegrow generated Register Sidebars Begin */
 
-    /* Esqueleto 1.0 generated Register Sidebars End */
+    /* Pinegrow generated Register Sidebars End */
 }
 add_action( 'widgets_init', 'esqueleto_widgets_init' );
 endif;// esqueleto_widgets_init
@@ -137,9 +137,9 @@ if ( ! function_exists( 'esqueleto_customize_register' ) ) :
 function esqueleto_customize_register( $wp_customize ) {
     // Do stuff with $wp_customize, the WP_Customize_Manager object.
 
-    /* Esqueleto 1.0 generated Customizer Controls Begin */
+    /* Pinegrow generated Customizer Controls Begin */
 
-    /* Esqueleto 1.0 generated Customizer Controls End */
+    /* Pinegrow generated Customizer Controls End */
 
 }
 add_action( 'customize_register', 'esqueleto_customize_register' );
@@ -149,16 +149,19 @@ endif;// esqueleto_customize_register
 if ( ! function_exists( 'esqueleto_enqueue_scripts' ) ) :
     function esqueleto_enqueue_scripts() {
 
-        /* Esqueleto 1.0 generated Enqueue Scripts Begin */
+        /* Pinegrow generated Enqueue Scripts Begin */
 
-    /* Esqueleto 1.0 generated Enqueue Scripts End */
+    /* Pinegrow generated Enqueue Scripts End */
 
-        /* Esqueleto 1.0 generated Enqueue Styles Begin */
+        /* Pinegrow generated Enqueue Styles Begin */
+
+    wp_deregister_style( 'reset' );
+    wp_enqueue_style( 'reset', get_template_directory_uri() . '/css/reset.css', false, null, 'all');
 
     wp_deregister_style( 'style' );
     wp_enqueue_style( 'style', get_bloginfo('stylesheet_url'), false, null, 'all');
 
-    /* Esqueleto 1.0 generated Enqueue Styles End */
+    /* Pinegrow generated Enqueue Styles End */
 
     }
     add_action( 'wp_enqueue_scripts', 'esqueleto_enqueue_scripts' );
@@ -166,10 +169,10 @@ endif;
 
 function pgwp_sanitize_placeholder($input) { return $input; }
 /*
- * Resource files included by Esqueleto 1.0.
+ * Resource files included by Pinegrow.
  */
-/* Esqueleto 1.0 generated Include Resources Begin */
+/* Pinegrow generated Include Resources Begin */
 require_once "inc/wp_pg_helpers.php";
 
-    /* Esqueleto 1.0 generated Include Resources End */
+    /* Pinegrow generated Include Resources End */
 ?>

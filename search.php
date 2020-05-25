@@ -10,7 +10,7 @@
         </article>
     <?php endwhile; ?>
 <?php else : ?>
-    <p><?php _e( 'Sorry, no posts matched your criteria.', 'esqueleto' ); ?></p>
+    
 <?php endif; ?>             
 
 <?php get_footer(); ?>

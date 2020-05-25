@@ -6,7 +6,7 @@
         <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
         <?php wp_head(); ?>
     </head>     
-    <body class="<?php echo implode(' ', get_body_class()); ?>">
+    <body>
         <?php if( function_exists( 'wp_body_open' ) ) wp_body_open(); ?> 
         <header></header>         
         <div>

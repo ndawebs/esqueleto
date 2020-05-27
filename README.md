@@ -27,7 +27,7 @@ function register_my_menus() {
 add_action( 'init', 'register_my_menus' );
 </code>
 
-
+<br></br>
 
 <b>Wordpress codex</b>
 

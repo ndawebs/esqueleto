@@ -26,7 +26,7 @@ function register_my_menus() {
 }
 add_action( 'init', 'register_my_menus' );
 </code>
-
+</br>
 <b>Wordpress codex</b>
-<br>
+</br>
 <a href="https://codex.wordpress.org/Navigation_Menus">https://codex.wordpress.org/Navigation_Menus</a>

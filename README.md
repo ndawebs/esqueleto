@@ -9,3 +9,20 @@ Of course they will control everything from Elementor since "Esqueleto Template"
 
 <a href="mailto:claciudad@yandex.com">Martin Oviedo</a>
 
+
+<h4>Add support menu</h4>
+<p>
+Need to add menu support? just add this code to functions.php
+</p>
+
+<code>
+function register_my_menus() {
+  register_nav_menus(
+    array(
+      'header-menu' => __( 'Header Menu' ),
+      'extra-menu' => __( 'Extra Menu' )
+    )
+  );
+}
+add_action( 'init', 'register_my_menus' );
+</code>

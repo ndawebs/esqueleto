@@ -26,3 +26,6 @@ function register_my_menus() {
 }
 add_action( 'init', 'register_my_menus' );
 </code>
+
+<b>Wordpress codex</b>
+<a href="https://codex.wordpress.org/Navigation_Menus">https://codex.wordpress.org/Navigation_Menus</a>

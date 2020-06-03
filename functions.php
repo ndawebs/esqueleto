@@ -48,6 +48,15 @@ function esqueleto_setup() {
      * Enable support for Page excerpts.
      */
      add_post_type_support( 'page', 'excerpt' );
+
+     add_theme_support( 'woocommerce' );
+    // Enabling WooCommerce product gallery features (are off by default since WC 3.0.0).
+    // zoom.
+    add_theme_support( 'wc-product-gallery-zoom' );
+    // lightbox.
+    add_theme_support( 'wc-product-gallery-lightbox' );
+    // swipe.
+    add_theme_support( 'wc-product-gallery-slider' );
 }
 endif; // esqueleto_setup
 
@@ -69,3 +78,11 @@ if ( ! function_exists( 'esqueleto_enqueue_scripts' ) ) :
     }
     add_action( 'wp_enqueue_scripts', 'esqueleto_enqueue_scripts' );
 endif;
+
+
+function theme_prefix_register_elementor_locations( $elementor_theme_manager ) {
+
+	$elementor_theme_manager->register_all_core_location();
+
+}
+add_action( '../elementor/theme/register_locations', 'theme_prefix_register_elementor_locations' );

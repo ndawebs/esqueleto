@@ -1,13 +1,5 @@
-<?php get_header(); ?>
-
-<?php if ( have_posts() ) : ?>
-    <?php while ( have_posts() ) : the_post(); ?>
-        <article> 
-            <?php the_content(); ?> 
-        </article>
-    <?php endwhile; ?>
-<?php else : ?>
-    
-<?php endif; ?>             
-
-<?php get_footer(); ?>
+<?php
+		if ( ! function_exists( 'elementor_theme_do_location' ) || ! elementor_theme_do_location( 'single' ) ) {
+			get_template_part( 'template-parts/page' );
+		}
+?>

@@ -31,7 +31,7 @@ add_action( 'init', 'register_my_menus' );
 
 <a href="https://codex.wordpress.org/Navigation_Menus">https://codex.wordpress.org/Navigation_Menus</a>
 
-<p><strong>Thanks to the collaboration of:</strong>
-Alan Jaen: Creator of the child version of the template.
-Nemo: Help with code compatibility errors using Elementor api.
+<p><strong>Thanks to the collaboration of:</strong><br>
+<b>Alan Jaen:</b> Creator of the child version of the template.<br>
+<b>Nemo:</b> Help with code compatibility errors using Elementor api.
  </p>

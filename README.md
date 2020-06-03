@@ -30,3 +30,8 @@ add_action( 'init', 'register_my_menus' );
 <b>Wordpress codex</b>
 
 <a href="https://codex.wordpress.org/Navigation_Menus">https://codex.wordpress.org/Navigation_Menus</a>
+
+<p><strong>Thanks to the collaboration of:</strong>
+Alan Jaen: Creator of the child version of the template.
+Nemo: Help with code compatibility errors using Elementor api.
+ </p>

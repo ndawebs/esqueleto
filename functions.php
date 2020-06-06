@@ -63,21 +63,10 @@ endif; // esqueleto_setup
 add_action( 'after_setup_theme', 'esqueleto_setup' );
 
 
+// Add css
 
 
-
-
-if ( ! function_exists( 'esqueleto_enqueue_scripts' ) ) :
-    function esqueleto_enqueue_scripts() {
-
-
-    wp_deregister_style( 'style' );
-    wp_enqueue_style( 'style', get_bloginfo('stylesheet_url'), false, null, 'all');
-
-
-    }
-    add_action( 'wp_enqueue_scripts', 'esqueleto_enqueue_scripts' );
-endif;
+wp_enqueue_style( 'slider', get_template_directory_uri() . '/style.css',false,'1.1','all');
 
 
 function theme_prefix_register_elementor_locations( $elementor_theme_manager ) {

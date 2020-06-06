@@ -7,7 +7,7 @@
         </article>
     <?php endwhile; ?>
 <?php else : ?>
-    <span>Article empty</span>
+    <span>Single empty</span>
 <?php endif; ?>             
 
 <?php get_footer(); ?>

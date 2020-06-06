@@ -1,4 +1,4 @@
-# Esqueleto 1.1
+# Esqueleto 1.1.1
 Wordpress template ready to use with Elementor, absolutely from scratch.
 
 The purpose of this template is to help all those design artisans, who like to have control of everything they use in their web designs.

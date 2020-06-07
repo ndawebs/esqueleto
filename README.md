@@ -35,3 +35,11 @@ add_action( 'init', 'register_my_menus' );
 <b>Alan Jaen:</b> Creator of the child version of the template.<br>
 <b>Nemo:</b> Help with code compatibility errors using Elementor api.
  </p>
+<b>Virus total report:</b>
+</br>
+https://www.virustotal.com/gui/file/893cd9a16e71e87d537f4e2e96d96d6125175fb97a75114629d6090bdf38f8f8/detection
+</br>
+<b>Download link</b>
+</br>
+https://yadi.sk/d/e2tKgWo8rqXtmg
+

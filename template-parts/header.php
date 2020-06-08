@@ -6,5 +6,5 @@
         <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
         <?php wp_head(); ?>
     </head>     
-    <body>       
-        <div>
+    <body <?php body_class( 'class-name' ); ?>>       
+        <div>Cambio 

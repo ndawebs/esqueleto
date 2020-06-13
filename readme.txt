@@ -1,4 +1,4 @@
-=== Esqueleto 1.0.3 ===
+=== Esqueleto 1.1.4 ===
 Contributors: ndawebs
 Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, rtl-language-support, sticky-post, threaded-comments, translation-ready
 Requires at least: 4.9.6

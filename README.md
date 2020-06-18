@@ -31,6 +31,16 @@ add_action( 'init', 'register_my_menus' );
 
 <a href="https://codex.wordpress.org/Navigation_Menus">https://codex.wordpress.org/Navigation_Menus</a>
 
+<h2>Body space bug</h2>
+<p>To fix the padding space bug in the body.
+Just add this css in the element header template in the css section.</p>
+<code>
+body {
+    margin: 0px;
+}
+</code>
+
+
 <p><strong>Thanks to the collaboration of:</strong><br>
 <b>Alan Jaen:</b> Creator of the child version of the template.<br>
 <b>Nemo:</b> Help with code compatibility errors using Elementor api.

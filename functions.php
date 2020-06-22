@@ -23,12 +23,16 @@ function esqueleto_setup() {
     add_theme_support( 'post-thumbnails' );
     set_post_thumbnail_size( 825, 510, true );
 
-    // Add menus.
- //   register_nav_menus( array(
- //       'primary' => __( 'Primary Menu', 'esqueleto' ),
-  //      'social'  => __( 'Social Links Menu', 'esqueleto' ),
-  //  ) );
 
+   function register_my_menus() {
+   register_nav_menus(
+    array(
+      'header-menu' => __( 'Header Menu' ),
+      'extra-menu' => __( 'Extra Menu' )
+  	  )
+ 	 );
+	}
+    add_action( 'init', 'register_my_menus' );
 
      /* Switch default core markup for search form, comment form, and comments
      * to output valid HTML5.

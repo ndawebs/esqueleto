@@ -1,5 +1,12 @@
 <?php
-get_header();
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
+if ( ! function_exists( 'elementor_theme_do_location' ) || ! elementor_theme_do_location( 'header' ) ) {
+	//get_template_part( 'template-parts/header' );
+	get_header();
+}
+
 
 $is_elementor_theme_exist = function_exists( 'elementor_theme_do_location' );
 
@@ -21,6 +28,9 @@ if ( is_singular() ) {
 	}
 }
 
-get_footer();
-
+if ( ! function_exists( 'elementor_theme_do_location' ) || ! elementor_theme_do_location( 'footer' ) ) {
+	//get_template_part( 'template-parts/footer' );
+	get_footer();
+	wp_footer();
+}
 ?>
